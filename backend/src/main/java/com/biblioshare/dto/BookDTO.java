@@ -1,0 +1,23 @@
+package com.biblioshare.dto;
+
+import com.biblioshare.entity.BookCondition;
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class BookDTO {
+    private Long id;
+    private String title;
+    private String author;
+    private String isbn;
+    private String genreName;
+    private String description;
+    private BookCondition condition;
+    private Boolean availableForLoan;
+    private UserDTO owner;
+    private Double averageRating;
+    private Integer reviewCount;
+}
